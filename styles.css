@@ -1,0 +1,173 @@
+body{
+    font-size: larger;
+    font-family: 'Popins',serif;
+}
+h1,h2{
+    font-weight: bolder;
+}
+.top-container{
+    display:flex;
+    justify-content: space-between;
+}
+.top-logo,.top-button{
+    width:20%;
+    margin-top:2rem   /*607px*/
+}
+.top-logo img{
+    width:100%
+}
+.intro-container{
+    margin-top: 3rem;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.intro-img{
+    width:50%;
+    text-align: center;
+}
+.intro-img img{
+    width:100%
+}
+.intro-text{
+    width:45%;
+    margin:2rem;
+    text-align: left;
+}
+header{
+    background-image: url(images/bg-hero-desktop.svg);
+    background-color: hsl(193, 100%, 96%);
+}
+
+/* CONTENT */
+.grow-container,.convo-container,.user-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    margin:5rem;
+    border-radius:20px;
+    flex-direction: row-reverse;
+    box-shadow: 5px 8px 20px black;
+}
+.convo-img,.grow-img,.user-img {
+    max-width:50%;
+}
+.grow-img img,.user-img img,.fim{
+    width:100%;
+}
+.grow-text,.convo-text,.user-text{
+    width:45%;
+    margin:1.5rem;
+    line-height: 1.5;
+    font-size:1.5rem
+}
+
+/* FOOTER */
+footer{
+    background-color: hsl(124, 34%, 19%);
+    padding-top: 8rem;
+    color:white
+}
+ul{
+    list-style:none ;
+}
+.credits{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.bimg{
+    margin: 1rem 3rem;}
+.upbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(215, 221, 227);
+    width: 50%;
+    margin: 2rem auto;
+    box-shadow: 5px 8px 15px black;
+    padding: 4rem;
+    text-align: center;
+    z-index: 1;
+    transform:translateY(6rem);
+    border-radius: 20px;
+}
+.upbox-text h2{
+    font-weight: bold;
+    margin-bottom:2rem
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Buttons */
+.b1{
+    border-radius: 20px;
+    background-color: white;
+    padding-left:4rem;
+    padding-right: 4rem;
+    box-shadow: 3px 5px 8px black;
+    word-wrap:break-word
+}
+.b1:hover{
+    background-color:rgb(219, 216, 226) ;
+}
+
+.b2{
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 50px;
+    border-style: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-weight: bold;
+}
+.b2:hover{
+    background-color:hsl(322, 24%, 49%) ;
+}
+
+@media(max-width:600px){
+    body{
+        text-align: center;
+    }
+    .intro-container{
+        justify-content: center;
+        align-items: center;
+    }
+    .b1{
+        padding-left: 1rem;
+        padding-right: 8rem;
+        white-space: nowrap;
+        text-align: center;
+        width:5rem;
+        margin-right:7rem
+    }
+    .b2{
+        white-space: nowrap;
+        text-align: center;
+    }
+    .grow-text,.convo-text,.user-text,.intro-text{
+        width: 100%;
+    }
+    .upbox{
+        width: 70%;
+        margin: auto;
+    }
+    .a{
+        line-height: 1.2;
+    }
+    .credits{
+        display: block;
+        text-align: center;
+    }
+    .grow-container,.convo-container,.user-container{
+        width:90%;
+        margin:3rem auto
+    }
+    .top-button,.top-logo{
+        width:40%
+    }
+}
